@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestr VAT - Ministerstwo Finansów</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">s
+</head>
+<body>
+    <h1>Rejestr VAT - Ministerstwo Finansów</h1>
+
+    <h2>Wyszukiwanie po numerze NIP</h2>
+    <input type="text" id="nipInput" placeholder="Wpisz NIP">
+    <button onclick="searchByNip()">Szukaj</button>
+    <pre id="nipResult"></pre>
+
+    <h2>Wyszukiwanie po numerze konta bankowego</h2>
+    <input type="text" id="bankAccountInput" placeholder="Wpisz numer konta">
+    <button onclick="searchByBankAccount()">Szukaj</button>
+    <pre id="bankAccountResult"></pre>
+
+    <h2>Wyszukiwanie po numerze REGON</h2>
+    <input type="text" id="regonInput" placeholder="Wpisz REGON">
+    <button onclick="searchByRegon()">Szukaj</button>
+    <pre id="regonResult"></pre>
+
+    <script src="script.js"></script>
+</body>
+</html>
